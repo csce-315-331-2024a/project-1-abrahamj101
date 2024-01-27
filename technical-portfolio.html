@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #f8f89e 30%, #f9bb94 100%);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: red;
+            font-size: 32px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .portfolio-header {
+            color: #d35400;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project-title {
+            font-weight: bold;
+            color: #e67e22;
+        }
+        .project-title a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        .project-title a:hover {
+            text-decoration: underline;
+        }
+        .project-description {
+            margin: 5px 0;
+        }
+        .navbar {
+            background-color: #118a63c7;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Landing Page</a>
+        <a href="qualifications.html">Qualifications</a>
+        <a href="service.html">Service</a>
+        <a href="ai-page.html">AI Generated Page</a>
+    </div>
+    
+    <div class="container">
+        <h1>Technical Portfolio</h1>
+
+        <div class="project">
+            <p class="project-title">ENGR 102</p>
+            <p class="project-description">Various projects utilizing Python programming including: data visualization, CSV File manipulation (read/write), engineering calculations, basic scripting.</p>
+        </div>
+
+        <div class="project">
+            <p class="project-title">CSCE 120 <a href="https://github.com/abrahamj101/Seam-Carving" target="_blank">(GitHub Link)</a></p>
+            <p class="project-description">Seam Carving - Developed a custom C++ program which enabled content-aware image resizing by assessing pixel contrast (RGB) to remove unnecessary backgrounds within an image.</p>
+        </div>
+
+        <div class="project">
+            <p class="project-title">CSCE 222 <a href="https://github.com/abrahamj101/Sudoku-Solver" target="_blank">(GitHub Link)</a></p>
+            <p class="project-description">Sudoku solver - Developed a custom C++ program to automate solving of sudoku puzzles with SMT-LIB code – generating several hundred lines of propositional statements to solve sudoku puzzles in under a minute. Tested, validated, and refined the code using online automation tools (Z3 playground).</p>
+        </div>
+
+        <div class="project">
+            <p class="project-title">CSCE 221 <a href="https://github.com/abrahamj101/Library-Management-System" target="_blank">(GitHub Link)</a></p>
+            <p class="project-description">Developed a library management system in C++ to find and manage school library books available in inventory, optimized for performance and fast information retrieval.</p>
+        </div>
+
+        <div class="project">
+            <p class="project-title">CSCE 313 <a href="https://github.com/abrahamj101/TCP-UDP-Client-Server" target="_blank">(GitHub Link)</a></p>
+            <p class="project-description">TCP/UDP Client Server program - Client-server program to obtain individual data points or whole raw file from the server. The client has to send properly-formatted messages to the server using a communication protocol defined by the server, using the TCP/UDP protocol to communicate over networks.</p>
+        </div>
+    </div>
+
+</body>
+</html>

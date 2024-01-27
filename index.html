@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joshua Abraham - Home</title>
+    <title>Landing Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #ffffcc 0%, #ffffff 100%);
+            background: linear-gradient(to bottom, #f8f89e 30%, #f9bb94 100%);
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -38,32 +38,54 @@
         }
         #mainContent {
             display: flex;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
             width: 100%;
+            margin-top: 20px;
         }
         #textSection {
-            flex-basis: 60%;
+            flex: 1;
+            padding: 20px;
         }
         #imageSection {
-            flex-basis: 40%;
-            text-align: right;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         #imageSection img {
-            max-width: 100%;
+            width: auto;
+            max-width: 30%;
             max-height: 200px;
             height: auto;
+            margin: 0 10px;
         }
         #contactInfo {
             text-align: center;
             width: 100%;
         }
         #toggleSwitch {
-            text-align: center;
-            width: 100%;
-            margin-top: 20px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
         .toggle {
             margin-left: 5px;
+        }
+        @media (max-width: 768px) {
+            #mainContent {
+                flex-direction: column;
+            }
+            #imageSection img {
+                max-width: 60%;
+                margin-bottom: 10px;
+            }
+            #toggleSwitch {
+                position: static;
+                order: -1;
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -72,33 +94,37 @@
         <a href="technical-portfolio.html">Technical Portfolio</a>
         <a href="qualifications.html">Qualifications</a>
         <a href="service.html">Service</a>
-        <a href="ai-generated-page.html">AI Generated Page</a>
+        <a href="ai-page.html">AI Generated Page</a>
     </div>
     
     <div id="landingPage">
-        <h1>Howdy! My name is Joshua Abraham!</h1>
-        <div id="mainContent">
-            <div id="textSection">
-                <h2>Quick Facts:</h2>
-                <ul>
-                    <li> <h4>I am a Junior Computer Engineering major</h4></li>
-                    <li> <h4>Minor in math and cyber security</h4></li>
-                    <li> <h4>Attend Texas A&M University</h4></li>
-                    <li> <h4>Graduating in May 2025</h4></li>
-                </ul>
-                <h3>Dedicated goal Oriented, software and hardware engineer, well experienced working on teams.</h3>
-                <h3>Seeking internship in software development or analog IC design for Summer 2024 or Fall 2024</h3>
-            </div>
-            <div id="imageSection">
-                <img src="./headshot.jpg" alt="Joshua Abraham">
-            </div>
-        </div>
-        <div id="contactInfo">
-            <p>Contact Info: <a href="tel:+15165929408">516-592-9408</a> | <a href="mailto:joshua.abraham720@gmail.com">joshua.abraham720@gmail.com</a> | <a href="https://www.linkedin.com/in/joshua-abraham-241290220/">LinkedIn</a></p>
-        </div>
         <div id="toggleSwitch">
             <label>This is my toggle switch to change CSS style</label>
             <input type="checkbox" class="toggle">
+        </div>
+        <h1 style="color:#fc0000">Howdy! My name is Joshua Abraham!</h1>
+        <div id="mainContent">
+            <div id="textSection">
+                <h2>Quick Facts:
+                <ul>
+                    <li>I am a Junior Computer Engineering major</li>
+                    <li>Minor in math and cyber security</li>
+                    <li>Attend Texas A&M University</li>
+                    <li>Graduating in May 2025</li>
+                </ul>
+                </h2>
+                
+                <h2>Dedicated goal Oriented, software and hardware engineer, well experienced working on teams</h2>
+                <h2>Seeking internship in software development or analog IC design for Summer 2024 or Fall 2024</h2>
+                <div id="contactInfo">
+                    <p>Contact Info: <a href="tel:+15165929408">Phone Number</a>, <a href="mailto:joshua.abraham720@gmail.com">Email</a>, <a href="https://www.linkedin.com/in/joshua-abraham-241290220/">LinkedIn</a></p>
+                </div>
+            </div>
+            <div id="imageSection">
+                <img src="./headshot.jpg" alt="Joshua Abraham">
+                <img src="./tamu.png" alt="TAMU Logo">
+                <img src="./hacktoon.png" alt="Hacktoon Character">
+            </div>
         </div>
     </div>
 </body>
