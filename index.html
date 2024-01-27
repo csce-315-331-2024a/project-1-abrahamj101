@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Abraham - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffffcc 0%, #ffffff 100%);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar {
+            background-color: #118a63c7;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        #landingPage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        #mainContent {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+        }
+        #textSection {
+            flex-basis: 60%;
+        }
+        #imageSection {
+            flex-basis: 40%;
+            text-align: right;
+        }
+        #imageSection img {
+            max-width: 100%;
+            max-height: 200px;
+            height: auto;
+        }
+        #contactInfo {
+            text-align: center;
+            width: 100%;
+        }
+        #toggleSwitch {
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .toggle {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="technical-portfolio.html">Technical Portfolio</a>
+        <a href="qualifications.html">Qualifications</a>
+        <a href="service.html">Service</a>
+        <a href="ai-generated-page.html">AI Generated Page</a>
+    </div>
+    
+    <div id="landingPage">
+        <h1>Howdy! My name is Joshua Abraham!</h1>
+        <div id="mainContent">
+            <div id="textSection">
+                <h2>Quick Facts:</h2>
+                <ul>
+                    <li> <h4>I am a Junior Computer Engineering major</h4></li>
+                    <li> <h4>Minor in math and cyber security</h4></li>
+                    <li> <h4>Attend Texas A&M University</h4></li>
+                    <li> <h4>Graduating in May 2025</h4></li>
+                </ul>
+                <h3>Dedicated goal Oriented, software and hardware engineer, well experienced working on teams.</h3>
+                <h3>Seeking internship in software development or analog IC design for Summer 2024 or Fall 2024</h3>
+            </div>
+            <div id="imageSection">
+                <img src="./headshot.jpg" alt="Joshua Abraham">
+            </div>
+        </div>
+        <div id="contactInfo">
+            <p>Contact Info: <a href="tel:+15165929408">516-592-9408</a> | <a href="mailto:joshua.abraham720@gmail.com">joshua.abraham720@gmail.com</a> | <a href="https://www.linkedin.com/in/joshua-abraham-241290220/">LinkedIn</a></p>
+        </div>
+        <div id="toggleSwitch">
+            <label>This is my toggle switch to change CSS style</label>
+            <input type="checkbox" class="toggle">
+        </div>
+    </div>
+</body>
+</html>

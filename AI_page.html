@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joshua's Journey from New York to Houston</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light blue background */
+        }
+        .header {
+            background-color: #00695c; /* Teal header */
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .content {
+            padding: 20px;
+            display: flex; /* Flex container */
+            flex-wrap: wrap; /* Wrap items if not enough space */
+            justify-content: space-around; /* Space out children evenly */
+        }
+        .section {
+            background-color: #fff3e0; /* Light orange for sections */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Flex children */
+            max-width: 45%; /* Maximum width */
+        }
+        .section img {
+            max-width: 100%; /* Full width of the section */
+            height: 150px; /* Fixed height for images */
+            display: block;
+            margin: 10px auto; /* Center images with some margin */
+            border-radius: 8px;
+        }
+        .section h2 {
+            color: #d84315; /* Deep orange for headers */
+        }
+        .section p, .section ul {
+            color: #666;
+        }
+        .section ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+        }
+        .section li::before {
+            content: "• ";
+            color: #d84315; /* Deep orange bullet points */
+        }
+        .textbox {
+            display: block; /* Makes the element a block-level element */
+            width: 80%; /* Width of the text box */
+            height: 100px; /* Height of the text box */
+            margin: 20px auto; /* Top and bottom margin, auto left and right for centering */
+            padding: 10px; /* Padding inside the text box */
+            background-color: #fff; /* Background color */
+            border: 1px solid #d84315; /* Border style */
+            border-radius: 8px; /* Rounded corners */
+            font-family: Arial, sans-serif; /* Font family */
+            color: #666; /* Text color */
+            resize: none; /* Disable resizing of the text box */
+            overflow: auto; /* Add scroll for overflow content */
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>My Journey from New York to Houston</h1>
+</div>
+
+<div class="content">
+    <!-- Section for New York -->
+    <div class="section">
+        <h2>My Birthplace: New York</h2>
+        <img src="ny.jpg" alt="New York City">
+        <p>New York the city i'm born in. The city's vibrant energy and diverse culture left a lasting impression on me.</p>
+    </div>
+
+    <!-- Section for Moving to Houston -->
+    <div class="section">
+        <h2>Moving to Houston</h2>
+        <img src="hou.jpg" alt="Houston City">
+        <p>My move to Houston marked a significant turn in my life. This city, known for energy, engineering, and healthcare industries, inspiring new perspectives and opportunities.</p>
+    </div>
+</div>
+
+<!-- Section for Favorite Things About Houston -->
+<div class="section" style="max-width: 90%; margin: 20px auto;">
+    <h2>What I Love About Houston</h2>
+    <ul>
+        <li><strong>Diverse Restaurants:</strong> Houston's culinary scene is unmatched, offering an array of global cuisines.</li>
+        <li><strong>Cultural Diversity:</strong> The city's cultural diversity is its heartbeat, making it a melting pot of traditions and lifestyles.</li>
+        <li><strong>Focus on Energy and Engineering:</strong> As a hub for energy and engineering, Houston aligns perfectly with my professional interests.</li>
+    </ul>
+</div>
+
+   <!-- Text Box at the bottom of the page -->
+   <textarea class="textbox" readonly>
+    create an HTML page include a section of my place of birth (New York) and then a section of where i moved to and grew up (Houston). continue to talk about Houston and my favorite things about Houston (so many types of restaurants, cultural diversity, emphasis on energy and engineering). make the website colorful, add pictures. make the pictures small enough to fit page without scrolling and make sure New York and Houston sections are side by side not on top of each other.
+    </textarea>
+</body>
+</html>
