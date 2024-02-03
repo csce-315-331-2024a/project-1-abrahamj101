@@ -7,21 +7,33 @@
     <link rel="stylesheet" type="text/css" href="style.css" id="mainStyleSheet">
 </head>
 <body>
+    <!-- Button to toggle the navigation bar for smaller screens -->
+    <button id="navbarToggle">Menu</button>
     <div class="navbar">
+        <!-- Button to dynamically switch between style sheets -->
         <button id="switchStyle">Toggle Styles</button>
+        <!-- Navigation links to other pages -->
         <a href="index.html">Landing Page</a>
         <a href="qualifications.html">Qualifications</a>
         <a href="service.html">Service</a>
         <a href="ai-page.html">AI Generated Page</a>
     </div>
 
+    <!-- Title of the page -->
+    <h1>Technical Portfolio</h1>
+    
+    <!-- Container for the technical portfolio projects -->
     <div class="tp-container">
+        <!-- Container for project images -->
         <div class="tp-images">
-            <img src="github.png" alt="GitHub Logo">
-            <img src="sudoku.png" alt="Sudoku Image">
-            <img src="clientserver.png" alt="Client Server Image">
+            <!-- Updated image source paths to go through a specific folder -->
+            <img src="pics/github.png" alt="GitHub Logo">
+            <img src="pics/sudoku.png" alt="Sudoku Image" id="Sudoku-w">
+            <img src="pics/clientserver.png" alt="Client Server Image">
         </div>
+        <!-- Container for project descriptions -->
         <div class="tp-text">
+            <!-- Individual project description -->
             <div class="tp-project">
                 <h2 class="tp-project-title">ENGR 102</h2>
                 <p class="tp-project-description">Various projects utilizing Python programming including: data visualization, CSV File manipulation (read/write), engineering calculations, basic scripting.</p>

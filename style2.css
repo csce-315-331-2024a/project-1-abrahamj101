@@ -1,26 +1,32 @@
-/* Resetting default padding and margin for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Adding a wooden texture background to the entire body */
 body {
-    background-image: url('wood-texture.jpg'); /* Replace with your actual wooden texture image path */
+    background-image: url('wood-texture.jpg');
     background-size: cover;
     font-family: 'Arial', sans-serif;
 }
-
-/* Styling the navbar */
-.navbar {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-    padding: 10px 0;
+body, .parent-container {
     text-align: center;
 }
 
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    left: -200px;
+    top: 0;
+    overflow-x: hidden;
+    transition: transform 0.3s ease;
+}
+
 .navbar a {
-    display: inline-block;
+    display: block;
     color: #333;
     padding: 14px 20px;
     text-decoration: none;
@@ -33,42 +39,65 @@ body {
     color: #000;
 }
 
-/* Main heading (h1) style */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
 h1 {
-    color: #d35400; /* Example color: Change as needed */
+    color: #d35400;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    width: auto;
 }
 
-/* Subheading (h2) style */
+.text-box {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 80%;
+}
+
+h2.text-box, h3.text-box, p.text-box {}
+
 h2 {
-    color: #2980b9; /* Example color: Change as needed */
+    color: #2980b9;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+h3 {
     text-align: center;
 }
 
-/* Paragraph (p) style */
 p {
-    color: #333; /* Dark text for readability */
+    text-align: center;
+    color: #333;
     padding: 5px 15px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 10px;
-    border-radius: 5px; /* Rounded corners for the paragraph boxes */
+    border-radius: 5px;
+    display: inline-block;
 }
 
-/* Styling for the image containers */
 img {
-    border: 5px solid #fff; /* Example border color: white */
-    border-radius: 10px; /* Rounded corners for images */
-    margin: 20px;
-    width: 200px; /* Set a fixed width or use percentages */
-    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    height: auto;
 }
 
-/* Button and link styling */
 button, a.button {
-    background-color: #3498db; /* Example color: Change as needed */
+    background-color: #3498db;
     border: none;
     padding: 10px 20px;
     color: #fff;
@@ -79,14 +108,13 @@ button, a.button {
     margin: 4px 2px;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
-    border-radius: 5px; /* Rounded corners for buttons */
+    border-radius: 5px;
 }
 
 button:hover, a.button:hover {
-    background-color: #2980b9; /* Darker shade on hover */
+    background-color: #2980b9;
 }
 
-/* Custom dropdown style */
 select {
     padding: 10px;
     margin: 10px;
@@ -94,31 +122,45 @@ select {
     border-radius: 5px;
 }
 
-/* Toggle switch styling */
 .toggle-switch {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-/* Footer styling */
 footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 200px);
+    left: 200px;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 24px;
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
     }
 
     .navbar a {
         padding: 10px 10px;
+        display: inline-block;
+    }
+
+    .main-content, footer {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    h1 {
+        font-size: 24px;
     }
 }

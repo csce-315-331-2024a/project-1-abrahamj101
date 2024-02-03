@@ -6,13 +6,13 @@ body {
     box-sizing: border-box;
 }
 .container, .content {
-    padding: 30px; /* Adds padding inside .container and .content for inner spacing */
+    padding: 30px;
     box-sizing: border-box;
 }
 h1 {
     text-align: center;
     color:  #ff0800; 
-    font-family: cursive;;
+    font-family: cursive;
 }
 h2 {
     color: rgb(255, 81, 81);
@@ -20,8 +20,8 @@ h2 {
 h3 {
     color: rgb(86, 85, 85);
 }
-a:not(.navbar a), a:not(.navbar a):hover { /* Excludes navbar links */
-    color: #7800a7; /* Bright blue color */
+a:not(.navbar a), a:not(.navbar a):hover {
+    color: #7800a7;
 }
 .navbar {
     background-color: #118a63c7;
@@ -43,60 +43,55 @@ a:not(.navbar a), a:not(.navbar a):hover { /* Excludes navbar links */
 .resume-container {
     flex: 0 0 23%;
     text-align: center;
-    padding: 20px; /* Adds space around the picture */
+    padding: 20px;
 }
 
 .image-container img {
     margin-bottom: 20px;
-    max-width: 100%; /* Keeps images responsive and not larger than their container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
-.service-image {
-    width: 20%; /* or any other size */
-    height: auto; /* maintains the aspect ratio */
-    display: block; /* ensures the image doesn't have extra space around it */
-    margin: 0 auto; /* centers the image within its container */
-}
+
 .project {
-    margin-bottom: 20px; /* Adds space between projects */
+    margin-bottom: 20px;
 }
 
 .project-title, .project-description {
-    padding: 0 30px; /* Adds horizontal padding to text within projects for additional spacing from edges */
+    padding: 0 30px;
 }
 ul {
-    margin-bottom: 20px; /* Adds space between each list item/section */
+    margin-bottom: 20px;
 }
 
 .tp-container {
-    display: flex; /* Enables flexbox layout */
-    flex-direction: row; /* Aligns children side by side */
-    align-items: flex-start; /* Aligns items at the start of the flex container */
-    gap: 0px; /* Space between the images and text sections */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .tp-images, .tp-text {
-    display: flex; /* Enables flexbox for these containers too, for further control */
-    flex-direction: column; /* Aligns their children (images or text blocks) vertically */
+    display: flex;
+    flex-direction: column;
 }
 
 .tp-images {
-    flex: 1; /* Keeps the flex assignment as is */
-    max-width: 50%; /* Keeps the maximum width at 50% of their parent container */
-    padding: 30px; /* Adds padding inside the tp-images container */
+    flex: 1;
+    max-width: 50%;
+    padding: 30px;
 }
 
 .tp-text {
-    flex: 2; /* Allows this container to take more space than the images container */
+    flex: 2;
 }
 
 .tp-images img {
-    width: 100%; /* Adjusts the width of the images to be smaller than the container */
-    height: auto; /* Maintains aspect ratio of the images */
-    margin: 30 auto; /* Centers the images within the tp-images container */
-    display: block; /* Ensures images are laid out as block elements, enabling margin auto to work */
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
-
 
 
 #landingPage {
@@ -126,10 +121,10 @@ ul {
 }
 #imageSection img {
     width: auto;
-    max-width: 60%;
+    max-width: 100%;
     max-height: 500px;
     height: auto;
-    margin: 0 10px;
+    margin: 10 50px;
 }
 #contactInfo {
     text-align: center;
@@ -146,18 +141,17 @@ ul {
 
 
 .content ul {
-    list-style-type: none; /* Removes bullet points */
     padding: 0;
     margin: 0;
 }
 
 .content li {
-    margin-bottom: 30px; /* Adds space between sections */
+    margin-bottom: 30px;
 }
 
 img {
-    max-width: 100%; /* Ensures images are never wider than their container */
-    height: auto; /* Maintains the aspect ratio */
-    display: block; /* Removes any inline defaults, can adjust if needed */
-    margin: 10px 0; /* Adds vertical space around images */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
 }

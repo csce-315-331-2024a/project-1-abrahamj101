@@ -8,26 +8,35 @@
 </head>
 <body>
 
+<!-- Navigation toggle button for mobile view -->
+<button id="navbarToggle">Menu</button>
 <div class="navbar">
+    <!-- Button to switch stylesheets for different visual themes -->
     <button id="switchStyle">Toggle Styles</button> 
 
+    <!-- Navigation links -->
     <a href="index.html">Landing Page</a>
     <a href="technical-portfolio.html">Technical Portfolio</a>
     <a href="service.html">Service</a>
     <a href="ai-page.html">AI Generated Page</a>
 </div>
 
+<!-- Page header with the title -->
 <div class="header">
     <h1>Qualifications</h1>
 </div>
 
+<!-- Main content area -->
 <div class="content" style="display: flex; align-items: flex-start; justify-content: center; gap: 20px;">
+    <!-- Resume container with a clickable image link to download the resume -->
     <div class="resume-container" >
         <a href="RESUME.pdf" target="_blank" download="Joshua_Abraham_Resume">
-            <img src="resume_pic.png" alt="Joshua Abraham's Resume" style="max-width: 100%; height: auto;">
+            <!-- Update the image path to ensure it's loaded from a specific folder structure -->
+            <img src="pics/resume_pic.png" alt="Joshua Abraham's Resume" style="max-width: 100%; height: auto;">
             <p style="text-align:center;">Click on the picture to download my resume as PDF!</p>
         </a>
     </div>
+    <!-- Qualifications details -->
     <div class="qualifications" style="flex: 1;">
         <h2>Technical Skills:</h2>
         <h3>Strong programming skills especially in C++ and Python due to course work and projects. Also Java, R, HTML/CSS.</h3>

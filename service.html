@@ -5,50 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Section</title>
     <link rel="stylesheet" type="text/css" href="style.css" id="mainStyleSheet">
-
 </head>
 <body>
 
-<div class="navbar">
-    <button id="switchStyle">Toggle Styles</button> 
+    <!-- Toggle button for the navigation menu -->
+    <button id="navbarToggle">Menu</button>
+    <div class="navbar">
+        <!-- Button to switch between different style sheets -->
+        <button id="switchStyle">Toggle Styles</button> 
+        <!-- Navigation links -->
+        <a href="index.html">Landing Page</a>
+        <a href="technical-portfolio.html">Technical Portfolio</a>
+        <a href="qualifications.html">Qualifications</a>
+        <a href="ai-page.html">AI Generated Page</a>
+    </div>
 
-    <a href="index.html">Landing Page</a>
-    <a href="technical-portfolio.html">Technical Portfolio</a>
-    <a href="qualifications.html">Qualifications</a>
-    <a href="ai-page.html">AI Generated Page</a>
-</div>
+    <div class="header">
+        <h1>Service Section</h1>
+    </div>
 
-<div class="header">
-    <h1>Service Section</h1>
-</div>
+    <!-- Main content area displaying service activities -->
+    <div class="content">
+        <ul>
+            <!-- Each list item represents a service activity -->
+            <li class="tp-container">
+                <div class="tp-images">
+                    <img src="pics/bigevent1.png" alt="Big Event">
+                    <img src="pics/bigevent2.jpeg" alt="Big Event">
+                </div>
+                <div class="tp-text">
+                    <h2>Big Event <a href="https://bigevent.tamu.edu/" target="_blank">(Link to Big Event description page)</a></h2>
+                    <p>The Big Event, hosted annually by Texas A&M University, stands as one of the largest student-run community service projects in the nation. It embodies the Aggie spirit of selfless service, fostering a strong sense of community and connection between students and residents. Thousands of students volunteer to undertake tasks like gardening, painting, and general cleanup in neighborhoods around the campus. This event is significant as it strengthens the bond between the university and the local community, promotes volunteerism, and provides students with a tangible way to express their gratitude to the surrounding community.</p>
+                </div>
+            </li>
+            <li class="tp-container">
+                <div class="tp-images">
+                    <img src="pics/helpdesk.jpg" alt="Technology Services">
+                </div>
+                <div class="tp-text">
+                    <h2>Student Technician @ TAMU IT Department <a href="https://it.tamu.edu/" target="_blank">(Link to TAMU Technology Services page)</a></h2>
+                    <p>Technology Services at Texas A&M University is a key department providing comprehensive IT support and resources to students, faculty, and staff. It offers a wide range of services, including network connectivity, email, cloud storage solutions, and software support. The Help Desk, a crucial component of this department, is the first point of contact for technology-related queries. It offers assistance with technical issues, guidance on software usage, and troubleshooting. The Help Desk plays a vital role in ensuring the smooth functioning of technological infrastructure, supporting the university's academic and administrative activities.</p>
+                </div>
+            </li>
+            <li class="tp-container">
+                <div class="tp-images">
+                    <img src="pics/stmary.jpeg" alt="Houston Church">
+                </div>
+                <div class="tp-text">
+                    <h2>Volunteering at St. Mary's Catholic church in Houston <a href="https://smkchouston.org/" target="_blank">(Link to St. Mary's Knanaya Church page)</a></h2>
+                    <p>At St. Mary's Catholic church I frequently volunteer for youth event days. The biggest event during the year which I volunteer for is Kid's Day, which is a day-long event where booths for games, prizes, painting, and food are set for the youth to enjoy. The event is usually at the start of summer break in May and is primarily targeted for kids K-12. Volunteering at church is a fulfilling and impactful activity, offering numerous benefits to both individuals and the community. It creates a sense of belonging to my community and strengthens faith through active participation in the church community. Volunteers often experience personal growth, develop new skills, and build meaningful relationships. Church volunteering can range from community outreach and charity work to assisting in administrative tasks or youth programs. This engagement not only helps in meeting the needs of the community but also instills a sense of purpose and satisfaction in the volunteers, reinforcing the values of compassion, service, and community support.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
 
-<div class="content">
-    <ul>
-        <li>
-            <h2>Big Event <a href="https://bigevent.tamu.edu/" target="_blank">(Link to Big Event description page)</a></h2>
-            <p>The Big Event, hosted annually by Texas A&M University, stands as one of the largest student-run community service projects in the nation. It embodies the Aggie spirit of selfless service, fostering a strong sense of community and connection between students and residents. Thousands of students volunteer to undertake tasks like gardening, painting, and general cleanup in neighborhoods around the campus. This event is significant as it strengthens the bond between the university and the local community, promotes volunteerism, and provides students with a tangible way to express their gratitude to the surrounding community.</p>
-            <div class="image-container">
-                <img src="bigevent1.png" alt="Big Event" class="service-image">
-                <img src="bigevent2.jpeg" alt="Big Event" class="service-image">
-            </div>
-        </li>
-        <li>
-            <h2>Student Technician @ TAMU IT Department <a href="https://it.tamu.edu/" target="_blank">(Link to TAMU Technology Services page)</a></h2>
-            <p>Technology Services at Texas A&M University is a key department providing comprehensive IT support and resources to students, faculty, and staff. It offers a wide range of services, including network connectivity, email, cloud storage solutions, and software support. The Help Desk, a crucial component of this department, is the first point of contact for technology-related queries. It offers assistance with technical issues, guidance on software usage, and troubleshooting. The Help Desk plays a vital role in ensuring the smooth functioning of technological infrastructure, supporting the university's academic and administrative activities.</p>
-            <div class="image-container">
-                <img src="helpdesk.jpg" alt="Technology Services" class="service-image">
-            </div>
-        </li>
-        <li>
-            <h2>Volunteering for youth event at local church in Houston <a href="https://smkchouston.org/" target="_blank">(Link to St. Mary's Knanaya Church page)</a></h2>
-            <p>Volunteering at church is a fulfilling and impactful activity, offering numerous benefits to both individuals and the community. It fosters a sense of belonging and strengthens faith through active participation in the church community. Volunteers often experience personal growth, develop new skills, and build meaningful relationships. Church volunteering can range from community outreach and charity work to assisting in administrative tasks or youth programs. This engagement not only helps in meeting the needs of the community but also instills a sense of purpose and satisfaction in the volunteers, reinforcing the values of compassion, service, and community support.</p>
-            <div class="image-container">
-                <img src="stmary.jpeg" alt="Houston Church" class="service-image">
-            </div>
-        </li>
-    </ul>
-</div>
-
-<script src="toggle.js"></script>
+    <script src="toggle.js"></script>
 </body>
 </html>

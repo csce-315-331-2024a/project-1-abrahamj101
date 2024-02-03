@@ -15,3 +15,14 @@ window.onload = function() {
     document.getElementById('switchStyle').addEventListener('click', toggleStyleSheet); //swticher
 };
 
+// For the Menu side nav bar on the 2nd style
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('navbarToggle').addEventListener('click', function() {
+        var navbar = document.querySelector('.navbar');
+        if (navbar.style.transform == 'translateX(200px)') {
+            navbar.style.transform = 'translateX(0)';
+        } else {
+            navbar.style.transform = 'translateX(200px)';
+        }
+    });
+});
