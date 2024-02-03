@@ -4,90 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #f8f89e 30%, #f9bb94 100%);
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .navbar {
-            background-color: #118a63c7;
-            text-align: center;
-            padding: 10px 0;
-        }
-        .navbar a {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        #landingPage {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        #mainContent {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin-top: 20px;
-        }
-        #textSection {
-            flex: 1;
-            padding: 20px;
-        }
-        #imageSection {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #imageSection img {
-            width: auto;
-            max-width: 30%;
-            max-height: 200px;
-            height: auto;
-            margin: 0 10px;
-        }
-        #contactInfo {
-            text-align: center;
-            width: 100%;
-        }
-        #toggleSwitch {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .toggle {
-            margin-left: 5px;
-        }
-        @media (max-width: 768px) {
-            #mainContent {
-                flex-direction: column;
-            }
-            #imageSection img {
-                max-width: 60%;
-                margin-bottom: 10px;
-            }
-            #toggleSwitch {
-                position: static;
-                order: -1;
-                width: 100%;
-                margin-bottom: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="navbar">
@@ -98,32 +15,40 @@
     </div>
     
     <div id="landingPage">
-        <div id="toggleSwitch">
-            <label>This is my toggle switch to change CSS style</label>
-            <input type="checkbox" class="toggle">
-        </div>
-        <h1 style="color:#fc0000">Howdy! My name is Joshua Abraham!</h1>
+
+        <h1>Howdy! My name is Joshua Abraham!</h1>
         <div id="mainContent">
             <div id="textSection">
-                <h2>Quick Facts:
+                <h2>Quick Facts:</h2>
+                <h3>
                 <ul>
                     <li>I am a Junior Computer Engineering major</li>
                     <li>Minor in math and cyber security</li>
                     <li>Attend Texas A&M University</li>
                     <li>Graduating in May 2025</li>
                 </ul>
-                </h2>
+                </h3>
                 
-                <h2>Dedicated goal Oriented, software and hardware engineer, well experienced working on teams</h2>
-                <h2>Seeking internship in software development or analog IC design for Summer 2024 or Fall 2024</h2>
+                <h2>My fit on a team</h2>
+                <h3>I stand out by offering a distinctive blend of programming and hardware expertise, while fitting into a team's corporate culture through effective communication and problem-solving skills.</h3>
+                <h2>Dedicated, goal oriented, software and hardware engineer, well experienced working on teams</h2>
+                <h2>Seeking internship in software development or electrical systems or applications engineering for Summer 2024 or Fall 2024</h2>
+
+                <div id="toggleSwitch">
+                    <label>This is my toggle switch to change CSS style</label>
+                    <button onclick="toggle.js">Toggle Style</button>
+                    
+
+                </div>
+
                 <div id="contactInfo">
-                    <p>Contact Info: <a href="tel:+15165929408">Phone Number</a>, <a href="mailto:joshua.abraham720@gmail.com">Email</a>, <a href="https://www.linkedin.com/in/joshua-abraham-241290220/">LinkedIn</a></p>
+                    <p>Contact Info: <a href="tel:+15165929408">(516)-592-9408</a>  |  <a href="mailto:joshua.abraham720@gmail.com">joshua.abraham720@gmail.com</a>  |  <a href="https://www.linkedin.com/in/joshua-abraham-241290220/">LinkedIn</a></p>
                 </div>
             </div>
             <div id="imageSection">
-                <img src="./headshot.jpg" alt="Joshua Abraham">
-                <img src="./tamu.png" alt="TAMU Logo">
-                <img src="./hacktoon.png" alt="Hacktoon Character">
+                <img src="./headshot.jpg" alt="Joshua Abraham"  >
+                <!-- <img src="./tamu.png" alt="TAMU Logo">
+                <img src="./hacktoon.png" alt="Hacktoon Character"> -->
             </div>
         </div>
     </div>

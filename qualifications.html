@@ -4,78 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qualifications</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #f8f89e 30%, #f9bb94 100%);
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .navbar {
-            background-color: #118a63c7;
-            text-align: center;
-            padding: 10px 0;
-        }
-        .navbar a {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .header h1 {
-            color: red;
-            font-size: 32px;
-        }
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 20px;
-        }
-        .resume-container {
-            flex: 1;
-            max-width: 40%; /* Maximum width for the PDF */
-            margin-right: 50px; /* Added space between PDF and qualifications */
-        }
-        .resume-container embed {
-            width: 100%;
-            height: 600px; /* Fixed height for the PDF */
-        }
-        .qualifications {
-            flex: 2;
-            max-width: 60%; /* Maximum width for the qualifications */
-        }
-        .qualifications ul {
-            list-style-type: disc; /* Enable bullet points */
-            margin-left: 20px; /* Indent list items */
-        }
-        .qualifications li {
-            margin-bottom: 10px;
-        }
-        .qualifications h2 {
-            margin-top: 20px; /* Adds vertical space */
-            font-size: 24px;
-            color: #d35400;
-        }
-        a {
-            color: blue;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        /* Additional styles as needed */
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -90,23 +19,23 @@
     <h1>Qualifications</h1>
 </div>
 
-<div class="content">
-    <div class="resume-container">
-        <embed src="RESUME.pdf" type="application/pdf" />
+<div class="content" style="display: flex; align-items: flex-start; justify-content: center; gap: 20px;">
+    <div class="resume-container" >
+        <a href="RESUME.pdf" target="_blank" download="Joshua_Abraham_Resume">
+            <img src="resume_pic.png" alt="Joshua Abraham's Resume" style="max-width: 100%; height: auto;">
+            <p style="text-align:center;">Click on the picture to download my resume as PDF!</p>
+        </a>
     </div>
-    <div class="qualifications">
+    <div class="qualifications" style="flex: 1;">
         <h2>Technical Skills:</h2>
-        <ul>
-            <li>Strong programming skills especially in C++ and Python due to course work and projects. Also Java, R, HTML/CSS.</li>
-            <li>Arduino and Raspberry Pi.</li>
-            <li>PCB Design (<a href="https://www.altium.com/altium-designer/" target="_blank">Altium Designer</a>), circuit analysis</li>
-        </ul>
+        <h3>Strong programming skills especially in C++ and Python due to course work and projects. Also Java, R, HTML/CSS.</h3>
+        <h3>Arduino and Raspberry Pi.</h3>
+        <h3>PCB Design (<a href="https://www.altium.com/altium-designer/" target="_blank">Altium Designer</a>), circuit analysis</h3>
+        
         <h2>Technical Areas of Interests:</h2>
-        <ul>
-            <li>Embedded System software (<a href="https://www.techtarget.com/iotagenda/definition/embedded-system" target="_blank">Learn more</a>) - because it's the intersection between software and hardware.</li>
-            <li>Cybersecurity (<a href="https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html" target="_blank">Learn more</a>) - because finding and fixing insecurities before hackers sounds fun.</li>
-            <li>Artificial Intelligence (<a href="https://www.ibm.com/topics/artificial-intelligence" target="_blank">Learn more</a>) - new and growing field with many applications to almost every sector.</li>
-        </ul>
+        <h3>Embedded System software (<a href="https://www.techtarget.com/iotagenda/definition/embedded-system" target="_blank">Learn more</a>) - because it's the intersection between software and hardware.</h3>
+        <h3>Cybersecurity (<a href="https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html" target="_blank">Learn more</a>) - because finding and fixing insecurities before hackers sounds fun.</h3>
+        <h3>Artificial Intelligence (<a href="https://www.ibm.com/topics/artificial-intelligence" target="_blank">Learn more</a>) - new and growing field with many applications to almost every sector.</h3>
     </div>
 </div>
 

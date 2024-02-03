@@ -1,0 +1,124 @@
+/* Resetting default padding and margin for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adding a wooden texture background to the entire body */
+body {
+    background-image: url('wood-texture.jpg'); /* Replace with your actual wooden texture image path */
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Styling the navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #333;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #f8f8f8;
+    color: #000;
+}
+
+/* Main heading (h1) style */
+h1 {
+    color: #d35400; /* Example color: Change as needed */
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+}
+
+/* Subheading (h2) style */
+h2 {
+    color: #2980b9; /* Example color: Change as needed */
+    text-align: center;
+}
+
+/* Paragraph (p) style */
+p {
+    color: #333; /* Dark text for readability */
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    margin: 10px;
+    border-radius: 5px; /* Rounded corners for the paragraph boxes */
+}
+
+/* Styling for the image containers */
+img {
+    border: 5px solid #fff; /* Example border color: white */
+    border-radius: 10px; /* Rounded corners for images */
+    margin: 20px;
+    width: 200px; /* Set a fixed width or use percentages */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Button and link styling */
+button, a.button {
+    background-color: #3498db; /* Example color: Change as needed */
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+button:hover, a.button:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+}
+
+/* Custom dropdown style */
+select {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Toggle switch styling */
+.toggle-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+    }
+}
