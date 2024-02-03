@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" id="mainStyleSheet">
 </head>
 <body>
     <div class="navbar">
+        <button id="switchStyle">Toggle Styles</button> 
+        
         <a href="technical-portfolio.html">Technical Portfolio</a>
         <a href="qualifications.html">Qualifications</a>
         <a href="service.html">Service</a>
@@ -34,16 +36,11 @@
                 <h2>Dedicated, goal oriented, software and hardware engineer, well experienced working on teams</h2>
                 <h2>Seeking internship in software development or electrical systems or applications engineering for Summer 2024 or Fall 2024</h2>
 
-                <div id="toggleSwitch">
-                    <label>This is my toggle switch to change CSS style</label>
-                    <button onclick="toggle.js">Toggle Style</button>
-                    
-
-                </div>
-
                 <div id="contactInfo">
                     <p>Contact Info: <a href="tel:+15165929408">(516)-592-9408</a>  |  <a href="mailto:joshua.abraham720@gmail.com">joshua.abraham720@gmail.com</a>  |  <a href="https://www.linkedin.com/in/joshua-abraham-241290220/">LinkedIn</a></p>
                 </div>
+
+        
             </div>
             <div id="imageSection">
                 <img src="./headshot.jpg" alt="Joshua Abraham"  >
@@ -52,5 +49,7 @@
             </div>
         </div>
     </div>
+
+<script src="toggle.js"></script>
 </body>
 </html>

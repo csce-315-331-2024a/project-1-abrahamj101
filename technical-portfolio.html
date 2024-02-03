@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" id="mainStyleSheet">
 </head>
-
 <body>
     <div class="navbar">
+        <button id="switchStyle">Toggle Styles</button>
         <a href="index.html">Landing Page</a>
         <a href="qualifications.html">Qualifications</a>
         <a href="service.html">Service</a>
@@ -16,42 +16,35 @@
     </div>
 
     <div class="tp-container">
-        <h1>Technical Portfolio</h1>
-
-        <div class="tp-content">
-            <div class="tp-images">
-                <img src="github.png" alt="GitHub Logo">
-                <img src="sudoku.png" alt="Sudoku Image">
-                <img src="clientserver.png" alt="Client Server Image">
+        <div class="tp-images">
+            <img src="github.png" alt="GitHub Logo">
+            <img src="sudoku.png" alt="Sudoku Image">
+            <img src="clientserver.png" alt="Client Server Image">
+        </div>
+        <div class="tp-text">
+            <div class="tp-project">
+                <h2 class="tp-project-title">ENGR 102</h2>
+                <p class="tp-project-description">Various projects utilizing Python programming including: data visualization, CSV File manipulation (read/write), engineering calculations, basic scripting.</p>
             </div>
-
-            <div class="tp-text">
-                <div class="tp-project">
-                    <h2 class="tp-project-title">ENGR 102</h2>
-                    <p class="tp-project-description">Various projects utilizing Python programming including: data visualization, CSV File manipulation (read/write), engineering calculations, basic scripting.</p>
-                </div>
-
-                <div class="tp-project">
-                    <h2 class="tp-project-title">Seam Carving <a href="https://github.com/abrahamj101/Seam-Carving" target="_blank">GitHub Link</a></h2>
-                    <p class="tp-project-description">Developed a custom C++ program which enabled content-aware image resizing by assessing pixel contrast (RGB) to remove unnecessary backgrounds within an image.</p>
-                </div>
-
-                <div class="tp-project">
-                    <h2 class="tp-project-title">Sudoku Solver <a href="https://github.com/abrahamj101/Sudoku-Solver" target="_blank">GitHub Link</a></h2>
-                    <p class="tp-project-description">Developed a custom C++ program to automate solving of sudoku puzzles with SMT-LIB code – generating several hundred lines of propositional statements to solve sudoku puzzles in under a minute. Tested, validated, and refined the code using online automation tools (Z3 playground).</p>
-                </div>
-
-                <div class="tp-project">
-                    <h2 class="tp-project-title">Library Catalog <a href="https://github.com/abrahamj101/Library-Management-System" target="_blank">GitHub Link</a></h2>
-                    <p class="tp-project-description">Developed a library management system in C++ to find and manage school library books available in inventory, optimized for performance and fast information retrieval.</p>
-                </div>
-
-                <div class="tp-project">
-                    <h2 class="tp-project-title">Client Server Program <a href="https://github.com/abrahamj101/TCP-UDP-Client-Server" target="_blank">GitHub Link</a></h2>
-                    <p class="tp-project-description">Client-server program to obtain individual data points or whole raw file from the server. The client has to send properly-formatted messages to the server using a communication protocol defined by the server, using the TCP/UDP protocol to communicate over networks.</p>
-                </div>
+            <div class="tp-project">
+                <h2 class="tp-project-title">Seam Carving <a href="https://github.com/abrahamj101/Seam-Carving" target="_blank">GitHub Link</a></h2>
+                <p class="tp-project-description">Developed a custom C++ program which enabled content-aware image resizing by assessing pixel contrast (RGB) to remove unnecessary backgrounds within an image.</p>
+            </div>
+            <div class="tp-project">
+                <h2 class="tp-project-title">Sudoku Solver <a href="https://github.com/abrahamj101/Sudoku-Solver" target="_blank">GitHub Link</a></h2>
+                <p class="tp-project-description">Developed a custom C++ program to automate solving of sudoku puzzles with SMT-LIB code – generating several hundred lines of propositional statements to solve sudoku puzzles in under a minute. Tested, validated, and refined the code using online automation tools (Z3 playground).</p>
+            </div>
+            <div class="tp-project">
+                <h2 class="tp-project-title">Library Catalog <a href="https://github.com/abrahamj101/Library-Management-System" target="_blank">GitHub Link</a></h2>
+                <p class="tp-project-description">Developed a library management system in C++ to find and manage school library books available in inventory, optimized for performance and fast information retrieval.</p>
+            </div>
+            <div class="tp-project">
+                <h2 class="tp-project-title">Client Server Program <a href="https://github.com/abrahamj101/TCP-UDP-Client-Server" target="_blank">GitHub Link</a></h2>
+                <p class="tp-project-description">Client-server program to obtain individual data points or whole raw file from the server. The client has to send properly-formatted messages to the server using a communication protocol defined by the server, using the TCP/UDP protocol to communicate over networks.</p>
             </div>
         </div>
     </div>
+
+<script src="toggle.js"></script>
 </body>
 </html>
